@@ -7,3 +7,7 @@ javaバージョンはjava-10です。
 
 ビルド済みjarファイルはtargetに入っています。
 target/testmode.batをダブルクリックすることで、ランチャーを起動することができます。
+
+Copyright © 2020 Kogyokusha_gcc
+Released under the MIT license
+https://github.com/Kogyokusha-GCC/GCC2020_MainProject/blob/master/LICENSE
