@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: GCC2020
+Implementation-Version: 0.0.1.1-SNAPSHOT
+Built-By: pizza king
+Specification-Title: GCC2020
+Implementation-Vendor-Id: io.github.kogyokusha_gcc
+Build-Jdk: 1.8.0_172
+Specification-Version: 0.0.1.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+
