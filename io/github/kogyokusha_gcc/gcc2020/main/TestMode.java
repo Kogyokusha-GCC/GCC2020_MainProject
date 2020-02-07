@@ -74,6 +74,10 @@ public class TestMode extends Application {
 		logger.finest("Version:" + TestMode.class.getPackage().getImplementationVersion());
 		logger.finest("CHDIR=" + System.getProperty("user.dir"));
 		logger.finest("ACTION:" + Genre.ACTION.getMaxGame());
+		logger.finest("COMMAND:" + Genre.COMMAND.getMaxGame());
+		logger.finest("SHOOTING:" + Genre.SHOOTING.getMaxGame());
+		logger.finest("TABLE:" + Genre.TABLE.getMaxGame());
+		logger.finest("OTHERS:" + Genre.OTHERS.getMaxGame());
 
 		launch(args);
 	}

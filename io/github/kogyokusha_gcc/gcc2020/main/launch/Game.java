@@ -11,8 +11,8 @@ public class Game{
 	private Genre genre;
 	private int game;
 	private String name;public String getName() {return name;}
-	private String exe;public String getExePath() {return exe;}
-	private String image;public String getImagePath() {return image;}
+	private String exe;public String getExePath() {return getGamePath() + "\\" + exe;}
+	private String image;public String getImagePath() {return getGamePath() + "\\" + image;}
 	private int difficulty;public int getDifficulty() {return difficulty;}
 	private int popularity;public int getPopularity() {return popularity;}
 	private String howtoplay;public String getHowToPlay() {return howtoplay;}
@@ -25,7 +25,7 @@ public class Game{
 		COMMAND(1,new File("games/command/")),
 		SHOOTING(2,new File("games/shooting/")),
 		TABLE(3,new File("games/table/")),
-		OTHERS(4,new File("games/others/"));
+		OTHERS(4,new File("games/other/"));
 
 		private int id;
 		private File file;
@@ -47,9 +47,11 @@ public class Game{
 			return file.listFiles();
 		}
 		public Game[] getListGames() throws GameException {
-			Game[] games = new Game[(int)file.length()];
+			Game[] games = new Game[(int) this.getMaxGame()];
 			for(int i = 0;i<getMaxGame();i ++) {
+				TestMode.logger.finest(this.file + String.valueOf(i));
 				games[i] = new Game(this,i);
+				TestMode.logger.finest("success(Game)");
 			}
 			return games;
 		}
@@ -67,7 +69,11 @@ public class Game{
 		}
 
 		try {
-			properties.load(new FileInputStream(ge.getListFiles()[ga].getPath() + "game.cfg"));TestMode.logger.finest("loaded properties of " + getGameID() + " to memory");//プロパティファイルをメモリにロード
+			TestMode.logger.finest("loading properties of " + getGameID() + " to memory");
+			TestMode.logger.finest(ge.getListFiles()[ga].getPath() + "\\game.cfg");
+			properties = new Properties();
+			properties.load(new FileInputStream(ge.getListFiles()[ga].getPath() + "\\game.cfg"));
+			TestMode.logger.finest("success(properties)");//プロパティファイルをメモリにロード
 		} catch (IOException e1) {
 			throw e2;
 		}
@@ -83,6 +89,8 @@ public class Game{
 		howtoplay = properties.getProperty("htp");TestMode.logger.finest("loaded how_to_play of" + getGameID());
 
 		TestMode.logger.finer(getGameID() + "succcessfully loaded.");
+
+		return;
 	}
 
 	public void launch() throws GameException {
@@ -106,6 +114,9 @@ public class Game{
 	}
 	public String toString() {
 		return getGameID();
+	}
+	public String getGamePath() {
+		return genre.getListFiles()[game].getPath();
 	}
 
 

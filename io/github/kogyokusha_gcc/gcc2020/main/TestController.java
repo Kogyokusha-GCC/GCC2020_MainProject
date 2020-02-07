@@ -65,6 +65,7 @@ public class TestController implements EventHandler<KeyEvent>{
 			TestMode.logger.fine("loaded games");
 		} catch (GameException e) {
 			TestMode.logger.log(Level.WARNING,e.toString());
+			e.printStackTrace();
 		}
 		genre = 0;game=0;
 		this.refresh();
@@ -80,10 +81,8 @@ public class TestController implements EventHandler<KeyEvent>{
 	}
 
 	private void refresh() {
-		System.out.println("a");
-		System.out.println(games.length);
 		Game nowGame = games[genre][game];
-		gameImage.setImage(new Image(nowGame.getImagePath()));
+		gameImage.setImage(new Image("file://" + nowGame.getImagePath()));
 	}
 
 }

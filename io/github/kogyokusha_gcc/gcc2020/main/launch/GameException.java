@@ -24,6 +24,6 @@ public class GameException extends Exception {
 		}
 	}
 	public String toString() {
-		return "GameException : An Exception occurred during game setup.";
+		return getTypeInString();
 	}
 }
