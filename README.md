@@ -12,3 +12,11 @@ javaバージョンはjava-10です。
 Copyright © 2020 Kogyokusha_gcc
 Released under the MIT license
 https://github.com/Kogyokusha-GCC/GCC2020_MainProject/blob/master/LICENSE
+
+Some software is not released under the MIT license.  
+If you wish to redistribute or use it for commercial purposes, 
+redistribute it with the permission of the kogyokusha computer club in advance.
+
+一部のソフトウェアはMITライセンスでリリースされていません。 
+再配布または営利目的での利用を希望される場合は、
+事前に攻玉社コンピュータ部の許可を得て再配布してください。
