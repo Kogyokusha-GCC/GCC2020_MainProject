@@ -14,7 +14,7 @@ Released under the MIT license
 https://github.com/Kogyokusha-GCC/GCC2020_MainProject/blob/master/LICENSE
 
 Some software is not released under the MIT license.  
-If you wish to redistribute or use it for commercial purposes, 
+If you want to redistribute or use it for commercial purposes, 
 redistribute it with the permission of the kogyokusha computer club in advance.
 
 一部のソフトウェアはMITライセンスでリリースされていません。 
