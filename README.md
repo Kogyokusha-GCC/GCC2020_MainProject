@@ -1,5 +1,7 @@
 # GCC2020_MainProject
  攻玉社コンピュータ部2020年度輝玉祭ランチャーのソースコードです。
+ 
+<span style="color: red; ">このソースコードは2020年に配布したランチャーのものではありません。</span>
 
 
 ソースコードはsrc/main/javaに入っています。メインクラスはio.github.kogyokusha_gcc.gcc2020.main.TestModeです。
