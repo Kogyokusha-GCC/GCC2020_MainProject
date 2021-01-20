@@ -14,7 +14,7 @@ javaバージョンはjava-10です。
 
 ビルド済みJarファイルーは一部のバージョンのみhttps://drive.google.com/open?id=15G8NWjzXifVCHI3G2aQNzLJxYnG5m-Uu にアップロードしています。ほかのバージョンが欲しい場合は、部の公式メールアドレスまでご連絡ください。
 
-Copyright © 2020 Kogyokusha_gcc
+Copyright © 2020 LeonMatsui
 Released under the MIT license
 https://github.com/Kogyokusha-GCC/GCC2020_MainProject/blob/master/LICENSE
 
